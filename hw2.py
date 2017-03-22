@@ -13,7 +13,7 @@ def readfile():
 		e=int(config['base']['e'])
 		for i in config.options('node'):
 			nodepoints=config['node'][i].split(',')
-			#i=class Node(,,i)
+			#class Node(nodepoints[0],nodepoints[1])
 			print (nodepoints)
 	except:
             print("ini fail")
