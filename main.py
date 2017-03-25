@@ -1,3 +1,4 @@
+from draw import *
 class Node:
 	def __init__(self,x=0,y=0,name=""):
 		self.x=x
@@ -70,6 +71,11 @@ def main():
 	t=Truss("0551287.ini")
 	t.readini()
 	t.outputini()
+	drawout=drawtruss(t,10)
+	drawout.creatCanvas()
+	drawout.drawbar()
+	drawout.drawcircle()
+	drawout.root.mainloop()
 	
 if __name__ == '__main__':
 	main()
